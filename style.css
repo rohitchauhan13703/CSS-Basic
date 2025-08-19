@@ -1,0 +1,117 @@
+/* 🌟 1. Selectors */
+p { color: blue; }
+.highlight { background: yellow; }
+#unique { font-weight: bold; color: red; }
+
+/* 🌟 2. Colors & Background */
+.color-box {
+  background: green;
+  color: white;
+  padding: 10px;
+}
+.gradient-box {
+  background: linear-gradient(to right, red, yellow);
+  padding: 10px;
+}
+.image-box {
+  background: url("https://picsum.photos/200") no-repeat center/cover;
+  width: 200px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🌟 3. Text & Fonts */
+.text-sample {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+/* 🌟 4. Box Model */
+.box-model {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid black;
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+}
+
+/* 🌟 5. Display & Position */
+.inline { display: inline; background: yellow; }
+.block { display: block; background: pink; }
+.relative { position: relative; top: 20px; left: 20px; background: lightgray; }
+.absolute { position: absolute; top: 200px; left: 100px; background: lightgreen; }
+.fixed { position: fixed; bottom: 10px; right: 10px; background: orange; }
+
+/* 🌟 6. Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  background: #ddd;
+}
+.flex-item {
+  background: skyblue;
+  padding: 20px;
+}
+
+/* 🌟 7. Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-item {
+  background: salmon;
+  padding: 20px;
+}
+
+/* 🌟 8. Transform, Transition, Animation */
+.hover-btn {
+  background: blue;
+  color: white;
+  padding: 10px;
+  transition: background 0.5s, transform 0.3s;
+}
+.hover-btn:hover {
+  background: red;
+  transform: scale(1.2);
+}
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+.animate-box {
+  width: 50px; height: 50px;
+  background: green;
+  animation: move 2s infinite alternate;
+  margin-top: 10px;
+}
+
+/* 🌟 9. Responsive */
+body { background: lightblue; }
+@media (max-width: 600px) {
+  body { background: lightcoral; }
+}
+
+/* 🌟 10. Extra */
+.extra {
+  width: 200px; height: 80px;
+  margin: 10px; padding: 10px;
+  border: 1px solid #000;
+}
+.opacity { opacity: 0.5; }
+.overflow { width: 150px; height: 60px; overflow: auto; }
+.cursor:hover { cursor: pointer; background: yellow; }
+.filter {
+  background: url("https://picsum.photos/200") no-repeat center/cover;
+  filter: grayscale(100%);
+}
